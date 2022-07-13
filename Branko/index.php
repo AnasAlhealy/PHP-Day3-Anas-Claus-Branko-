@@ -10,7 +10,7 @@ if(mysqli_num_rows($result)  > 0) {
     <div class='card-body'>
       <h5 class='card-title'> $row[name].</h5>
       <p class='card-text'>$row[price].</p>
-      <a href=#><button class='btn btn-secondary btn-sm' type='button'>Show details</button></a>
+      <a href='details.php?test=" .$row['dishes_id']."'><button class='btn btn-secondary btn-sm' type='button'>Show details</button></a>
       <a href='update.php?id=" .$row['dishes_id']."'><button class='btn btn-primary btn-sm' type='button'>Edit</button></a>
      <a href='delete.php?id=" .$row['dishes_id']."'><button class='btn btn-danger btn-sm' type='button'>Delete</button></a>
       
